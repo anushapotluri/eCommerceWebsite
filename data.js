@@ -1,5 +1,6 @@
  var shoppingData= [
     {
+        id: 1,
         name:"sandisk Hard disk",
         company:"sandisk",
         price: 22,
@@ -8,6 +9,7 @@
         image: "https://images-na.ssl-images-amazon.com/images/I/51BTvv0dVDL._AC_US160_.jpg"
     },
     {
+        id: 2,
         name:"sandisk Hard disk",
         company:"sandisk",
         price: 22,
@@ -16,6 +18,7 @@
         image: "https://images-na.ssl-images-amazon.com/images/I/416IxcmUpGL._AC_US160_.jpg"
     },
     {
+        id: 3,
         name:"sandisk Hard disk",
         company:"sandisk",
         price: 22,
@@ -24,6 +27,7 @@
         image: "https://images-na.ssl-images-amazon.com/images/I/31BTSMhk4mL._AC_US160_.jpg"
     },
     {
+        id: 4,
         name:"sandisk Hard disk",
         company:"sandisk",
         price: 22,
@@ -32,6 +36,7 @@
         image: "https://images-na.ssl-images-amazon.com/images/I/41vMYgD92xL._AC_US160_.jpg"
     },
     {
+        id: 5,
         name:"sandisk Hard disk",
         company:"sandisk",
         price: 22,
@@ -40,6 +45,7 @@
         image: "https://images-na.ssl-images-amazon.com/images/I/41qR7C253KL._AC_US160_.jpg"
     },
     {
+        id: 6,
         name:"sandisk Hard disk",
         company:"sandisk",
         price: 22,
@@ -48,21 +54,4 @@
         image: "https://images-na.ssl-images-amazon.com/images/I/51m7KeTAWEL._AC_US160_.jpg"
     }
 ]
-/*Using template literals*/
-function shoppingCart(items){
-        return `
-        <div>
-        <img src="${items.image}">
-        <h1>${items.name}</h1>
-        <h2>${items.company}</h2>
-        <h3>${items.price}</h3>
-        <h4>${items.summary}</h4>
-        <h5>${items.description}</h5>
-        </div>
-        `
-}
-document.getElementById('getJsonData').innerHTML = 
-`
-<h1>${shoppingData.length} results</h1>
-${shoppingData.map(shoppingCart).join('')}
-`
+

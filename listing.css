@@ -1,5 +1,19 @@
-.show-list {
-    width:50%;
+.pageHeading {
+    text-align: center;
+}
+.pageContainer {
     display: flex;
-    
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 100%;
+}
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 50%;
+    flex-wrap: wrap;
+    height: 50%;
 }
